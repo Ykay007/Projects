@@ -1,0 +1,16 @@
+
+% This program gives a fibonacci sequence of any Nth term
+try
+
+    number = input('Enter a number: ' );
+
+catch exception
+end
+    fibonacc(1) =1;
+    fibonacc(2) =1;
+    j=3;
+    while number >= j
+        fibonacc(j) = fibonacc(j-1) + fibonacc(j-2);
+        j=j+1;
+    end 
+    display(fibonacc);
